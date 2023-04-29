@@ -1,12 +1,7 @@
 import React from "react";
 import { MinusIcon, PlusIcon } from "../Heroicons";
 import { useDispatch } from "react-redux";
-import {
-  removeItem,
-  increase,
-  decrease,
-  clearCart,
-} from "../features/cart/CartSlice";
+import { removeItem, increase, decrease } from "../features/cart/CartSlice";
 
 const CartItem = ({ id, amount, img, title, price }) => {
   const dispatch = useDispatch();
