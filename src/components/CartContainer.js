@@ -9,7 +9,7 @@ const CartContainer = () => {
   const dispatch = useDispatch();
 
   console.log(amount);
-  if (amount > 1) {
+  if (amount < 1) {
     return (
       <section className="cart">
         <header>
